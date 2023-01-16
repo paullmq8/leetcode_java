@@ -1,4 +1,4 @@
-package com.leetcode.binary_tree;
+package com.leetcode.binary_tree.cousins_in_binary_tree;
 /*
  * @lc app=leetcode id=993 lang=java
  *
@@ -13,7 +13,8 @@ class Solution {
 
     private boolean dfs(TreeNode node, int val) {
         if (node == null) return false;
-        dfs(node.left, val) 
+        dfs(node.left, val);
+        return false;
     }
 
     public boolean isCousins(TreeNode root, int x, int y) {
